@@ -1,0 +1,5 @@
+# This file ensures the images directory is tracked by git
+# Add your salon photos here:
+# - syd-stylist.jpg (for About section)
+# - salon-hero.jpg (optional hero background)
+# - favicon.ico and apple-touch-icon.png (site icons)
