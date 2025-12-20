@@ -8,7 +8,7 @@
     <!-- SEO Meta Tags -->
     <title>The Complete Guide to Hair Extensions | Hair by Syd</title>
     <meta name="description" content="Everything you need to know about hair extensions: types, installation methods, maintenance tips, and how to choose the right extensions for your hair goals.">
-    <meta name="keywords" content="hair extensions guide, tape-in extensions, hand-tied extensions, hair extension maintenance, Omaha hair extensions">
+    <meta name="keywords" content="hair extensions guide, tape-in extensions, hand-tied extensions, hair extension maintenance">
     <meta name="author" content="Syd">
 
     <!-- Open Graph -->
@@ -17,8 +17,6 @@
     <meta property="og:title" content="The Complete Guide to Hair Extensions | Hair by Syd">
     <meta property="og:description" content="Everything you need to know about hair extensions: types, installation methods, and maintenance tips.">
     <meta property="og:image" content="https://hairbysyd.com/images/blog/hair-extensions-guide.jpg">
-    <meta property="article:published_time" content="2024-12-10">
-    <meta property="article:author" content="Syd">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -29,12 +27,13 @@
     <link rel="canonical" href="https://hairbysyd.com/blog/hair-extensions-guide.html">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -43,8 +42,6 @@
         "@type": "BlogPosting",
         "headline": "The Complete Guide to Hair Extensions: Everything You Need to Know",
         "image": "https://hairbysyd.com/images/blog/hair-extensions-guide.jpg",
-        "datePublished": "2024-12-10",
-        "dateModified": "2024-12-10",
         "author": {
             "@type": "Person",
             "name": "Syd",
@@ -77,8 +74,9 @@
             --background-cream: rgba(250,249,244,1);
             --hover-color: rgba(196,190,177,1);
             --border-color: rgba(228,225,219,1);
-            --font-primary: 'Inter', sans-serif;
-            --font-display: 'Playfair Display', serif;
+            --font-primary: 'Nunito Sans', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+            --font-display: 'Playfair Display', 'Didot', serif;
+            --font-script: 'Dancing Script', cursive;
             --section-padding: clamp(2rem, 6vw, 4rem);
             --container-padding: clamp(1rem, 4vw, 2rem);
         }
@@ -229,21 +227,11 @@
             padding: 0 var(--container-padding);
         }
 
-        .article-featured-image .image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: var(--background-dark);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
         .article-featured-image img {
             width: 100%;
-            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            object-position: center;
             border-radius: 12px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
@@ -289,36 +277,6 @@
             line-height: 1.7;
         }
 
-        .article-content blockquote {
-            border-left: 4px solid var(--accent-color);
-            padding: 1rem 1.5rem;
-            margin: 2rem 0;
-            background: var(--background-accent);
-            border-radius: 0 8px 8px 0;
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-
-        .article-content .image-placeholder {
-            width: 100%;
-            height: 300px;
-            background: var(--background-dark);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            margin: 2rem 0;
-            font-size: 0.9rem;
-        }
-
-        .article-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
         /* CTA Section */
         .article-cta {
             background: var(--background-accent);
@@ -356,56 +314,6 @@
             transform: translateY(-2px);
         }
 
-        /* Author Section */
-        .author-section {
-            display: flex;
-            gap: 1.5rem;
-            padding: 2rem;
-            background: var(--background-light);
-            border-radius: 12px;
-            margin: 3rem 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        }
-
-        .author-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: var(--background-dark);
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            font-size: 0.7rem;
-        }
-
-        .author-image img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .author-info h4 {
-            font-family: var(--font-display);
-            font-size: 1.2rem;
-            margin-bottom: 0.25rem;
-            color: var(--text-primary);
-        }
-
-        .author-info .author-title {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .author-info p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
         /* Share Section */
         .share-section {
             display: flex;
@@ -413,7 +321,6 @@
             gap: 1rem;
             padding: 1.5rem 0;
             border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
             margin: 2rem 0;
         }
 
@@ -452,75 +359,6 @@
             height: 18px;
             fill: var(--text-primary);
             transition: fill 0.3s ease;
-        }
-
-        /* Related Posts */
-        .related-posts {
-            padding: var(--section-padding) 0;
-            background: var(--background-light);
-        }
-
-        .related-posts h2 {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            color: var(--text-primary);
-        }
-
-        .related-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .related-card {
-            background: var(--background-cream);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-            transition: transform 0.3s ease;
-        }
-
-        .related-card:hover {
-            transform: translateY(-3px);
-        }
-
-        .related-card-image {
-            height: 180px;
-            background: var(--background-dark);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
-
-        .related-card-content {
-            padding: 1.25rem;
-        }
-
-        .related-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .related-card h3 a {
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: color 0.3s ease;
-        }
-
-        .related-card h3 a:hover {
-            color: var(--accent-color);
-        }
-
-        .related-card-date {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
         }
 
         /* Footer */
@@ -572,26 +410,26 @@
                 display: flex;
             }
 
+            .nav.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(250,249,244,0.98);
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+                gap: 1rem;
+            }
+
             .article-meta {
                 flex-direction: column;
                 gap: 0.5rem;
             }
 
-            .author-section {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .author-image {
-                margin: 0 auto;
-            }
-
             .share-section {
                 flex-direction: column;
-            }
-
-            .related-grid {
-                grid-template-columns: 1fr;
             }
 
             .footer-content {
@@ -637,7 +475,7 @@
         <div class="container">
             <div class="article-header-content">
                 <span class="article-category">Extensions</span>
-                <h1>The Complete Guide to Hair Extensions: Everything You Need to Know</h1>
+                <h1>The Complete Guide to Hair Extensions</h1>
                 <div class="article-meta">
                     <span>8 min read</span>
                 </div>
@@ -647,127 +485,130 @@
 
     <!-- Featured Image -->
     <div class="article-featured-image">
-        <div class="image-placeholder">
-            <!-- Replace with: <img src="/images/blog/hair-extensions-guide.jpg" alt="Various types of professional hair extensions displayed"> -->
-            Featured Image: 1200x600px recommended
-        </div>
+        <img src="/images/extensions2.jpg" alt="Beautiful hair extensions styled by Syd">
     </div>
 
     <!-- Article Content -->
     <article class="article-content">
-        <p>Hair extensions have revolutionized the way we think about hair transformations. Whether you're looking for added length, volume, or just want to experiment with a new look without the commitment, extensions offer endless possibilities. In this comprehensive guide, we'll cover everything you need to know before taking the plunge.</p>
+        <p>If you've been thinking about hair extensions but don't know where to start, you're not alone. I get questions about extensions almost every day—from clients in my chair, DMs on Instagram, even friends of friends at parties. So I figured it was time to put everything I know into one place.</p>
 
-        <h2>Types of Hair Extensions</h2>
+        <p>I've been specializing in extensions for years now, and I've learned a lot—some from training, but honestly, most from the hundreds of installs I've done and the mistakes I made early on. This guide is everything I wish someone had told me when I first got curious about extensions, and everything I tell my clients during consultations.</p>
 
-        <p>Not all extensions are created equal. Understanding the different types will help you make the best choice for your hair type, lifestyle, and budget.</p>
+        <h2>First Things First: Are Extensions Right for You?</h2>
 
-        <h3>Tape-In Extensions</h3>
+        <p>Here's something I always tell potential clients: extensions aren't for everyone, and that's okay. They're an investment of both money and time, and I'd rather be honest with you upfront than have you regret it later.</p>
 
-        <p>Tape-in extensions are one of the most popular methods for adding length and volume. They consist of hair wefts attached to thin, medical-grade adhesive strips that are sandwiched between sections of your natural hair.</p>
-
+        <p><strong>Extensions might be a great fit if you:</strong></p>
         <ul>
-            <li><strong>Best for:</strong> Fine to medium hair types</li>
-            <li><strong>Longevity:</strong> 6-8 weeks between adjustments</li>
-            <li><strong>Maintenance:</strong> Low to moderate</li>
+            <li>Want length or volume that your natural hair can't achieve right now</li>
+            <li>Are willing to commit to maintenance appointments every 6-10 weeks</li>
+            <li>Have realistic expectations about care and styling</li>
+            <li>Are patient—your first set is a learning curve</li>
         </ul>
 
-        <div class="image-placeholder">
-            <!-- Replace with: <img src="/images/blog/tape-in-extensions.jpg" alt="Close-up of tape-in hair extension application"> -->
-            Image: Tape-in extensions example (800x400px)
-        </div>
+        <h2>The Main Types of Extensions I Work With</h2>
+
+        <p>There are a lot of extension methods out there, but these are the ones I install most often and trust to deliver great results.</p>
 
         <h3>Hand-Tied Weft Extensions</h3>
 
-        <p>Hand-tied wefts are considered the gold standard in hair extensions. Each weft is hand-sewn, creating a thinner, more flexible base that lies flat against the head for an incredibly natural look.</p>
+        <p>These are my personal favorite for most clients. Hand-tied wefts are exactly what they sound like—thin wefts of hair that are hand-sewn, making them incredibly lightweight and flat against your head. You can't feel them, and when installed correctly, you can't see them either.</p>
 
+        <p>I recommend hand-tied wefts for clients with fine to medium hair who want the most natural look possible. They're also great if you're active—they move with your natural hair and don't feel heavy during workouts.</p>
+
+        <p>The trade-off? They need adjustment every 8-10 weeks as your hair grows out, and they require a beaded row foundation that takes a bit longer to install.</p>
+
+        <h3>Tape-In Extensions</h3>
+
+        <p>Tape-ins are the most popular method I see clients asking about, and for good reason. They're quicker to install, generally more affordable for a first set, and work well for adding both length and volume.</p>
+
+        <p>The "tape" is medical-grade adhesive on thin wefts that sandwich small sections of your hair. When done right, they blend seamlessly and are comfortable to wear.</p>
+
+        <p>I typically recommend tape-ins for clients who want to try extensions for the first time without the bigger investment, or for clients with medium-density hair. They do need to be moved up every 6-8 weeks, and you'll need to be careful with certain products near the tape (oils can break down the adhesive).</p>
+
+        <h3>K-Tip (Keratin Bond) Extensions</h3>
+
+        <p>K-tips are individual strands bonded to your natural hair using keratin—the same protein your hair is made of. They offer the most versatility for styling because each strand moves independently, just like your natural hair.</p>
+
+        <p>These are great for clients with thicker hair who want a lot of volume, or for anyone who wants to wear high ponytails and updos regularly (the bonds are nearly invisible). The downside is they take longer to install (we're talking 2-3 hours for a full head) and are the highest maintenance option.</p>
+
+        <h2>What Actually Happens at Your Appointment</h2>
+
+        <p>If you've never had extensions before, here's what to expect when you come see me:</p>
+
+        <h3>The Consultation (30 minutes)</h3>
+
+        <p>Everything starts with a consultation—this is the most important step. I'll analyze your hair's texture, density, and current condition to understand exactly what we're working with. From there, I match you with the right type of extensions based on your hair and what will give you the best results.</p>
+
+        <p>We'll also talk through your overall goals. Are you looking for length? Volume? Both? Do you have a specific look in mind, or are you open to suggestions? I want to understand what you're envisioning so we can make it happen.</p>
+
+        <p>Then we cover maintenance—what the upkeep looks like, how often you'll need to come back, and what your at-home routine will be. I want you to walk in knowing exactly what you're signing up for.</p>
+
+        <p>We'll also color-match your extensions during this time. I carry a range of colors, but sometimes we need to custom-order or color the extensions to get a perfect blend. This is not something to rush.</p>
+
+        <h3>The Install (1.5-3 hours depending on method)</h3>
+
+        <p>If everything checks out at your consultation and we're both on the same page, we move forward with the install. The actual installation takes longer than most people expect, but that's because I'm being thorough. I section your hair carefully, place each weft or bond precisely, and make sure everything is secure but comfortable. Rushing this step is how you end up with visible tracks or damage.</p>
+
+        <h3>The Blend and Style (30-45 minutes)</h3>
+
+        <p>Once the extensions are in, I cut and blend them with your natural hair. This is where the magic happens—good blending is the difference between "obviously has extensions" and "wow, her hair looks amazing."</p>
+
+        <h2>The Honest Truth About Maintenance</h2>
+
+        <p>I'm not going to sugarcoat this: extensions require maintenance. But once you get into a routine, it becomes second nature. And here's what I hear from clients all the time—once you see that length and volume in the mirror, once you feel that confidence boost every time you catch your reflection, the maintenance doesn't feel like work anymore. It just becomes part of how you take care of yourself.</p>
+
+        <p><strong>Daily care:</strong></p>
         <ul>
-            <li><strong>Best for:</strong> All hair types, especially fine hair</li>
-            <li><strong>Longevity:</strong> 8-10 weeks between adjustments</li>
-            <li><strong>Maintenance:</strong> Moderate</li>
+            <li>Brush your hair 2-3 times a day with a proper extension brush (I'll recommend one). Always start at the ends and work your way up—never yank from the roots.</li>
+            <li>Never go to bed with wet hair. This causes matting at the attachment points, and trust me, that's not fun to fix.</li>
+            <li>Sleep with your hair in a loose braid or low ponytail. A silk pillowcase helps too.</li>
         </ul>
 
-        <h3>Keratin Bond (Fusion) Extensions</h3>
-
-        <p>Keratin bond extensions are applied strand by strand using a keratin-based adhesive that's melted onto your natural hair. This method provides the most natural movement and styling versatility.</p>
-
+        <p><strong>Washing:</strong></p>
         <ul>
-            <li><strong>Best for:</strong> Medium to thick hair</li>
-            <li><strong>Longevity:</strong> 3-4 months</li>
-            <li><strong>Maintenance:</strong> Higher maintenance</li>
+            <li>Use sulfate-free shampoo and conditioner—I can recommend specific products that work well.</li>
+            <li>Wash in a downward motion. Don't flip your head upside down or scrub aggressively.</li>
+            <li>Keep conditioner away from the bonds or tape. Focus on the mid-lengths and ends.</li>
+            <li>Most clients can wash 2-3 times per week. If you're used to daily washing, this might be an adjustment.</li>
         </ul>
 
-        <h2>How to Choose the Right Extensions</h2>
-
-        <p>Selecting the right type of extensions depends on several factors. Here's what to consider during your consultation:</p>
-
-        <blockquote>
-            "The best extensions are the ones that work with your lifestyle, not against it. A great stylist will help you find the perfect match for your hair goals and daily routine."
-        </blockquote>
-
-        <h3>Consider Your Hair Type</h3>
-
-        <p>Your natural hair's texture, thickness, and condition play a major role in determining which extension method will work best. Fine hair typically does well with tape-ins or hand-tied wefts, while thicker hair can handle the weight of keratin bonds.</p>
-
-        <h3>Lifestyle Factors</h3>
-
-        <p>Think about your daily activities. Do you work out frequently? Swim often? Your lifestyle will impact which method is most practical for you:</p>
-
+        <p><strong>Styling:</strong></p>
         <ul>
-            <li><strong>Active lifestyle:</strong> Hand-tied wefts or secure tape-ins</li>
-            <li><strong>Frequent swimmer:</strong> Keratin bonds (with proper care)</li>
-            <li><strong>Low-maintenance preference:</strong> Tape-ins with longer wear time</li>
+            <li>Yes, you can heat style your extensions—just keep temperatures moderate and use heat protectant.</li>
+            <li>Avoid applying heat directly to the attachment points.</li>
+            <li>You can curl, straighten, and blow-dry just like your natural hair.</li>
         </ul>
 
-        <h2>Extension Maintenance 101</h2>
+        <h2>A Note on Cost</h2>
 
-        <p>Proper maintenance is crucial for keeping your extensions looking beautiful and protecting your natural hair. Here are the essential care tips:</p>
+        <p>I get asked about pricing constantly, and I understand—it's an investment and you want to budget for it. Pricing varies based on the method, how much hair you need, and the quality of the hair itself.</p>
 
-        <h3>Daily Care</h3>
+        <p>What I can tell you is this: quality extensions cost more upfront but save you money long-term. Cheap hair tangles, mattes, and needs to be replaced much sooner. The hair I use is 100% human, ethically sourced, and can be reused for multiple installs if cared for properly.</p>
 
-        <ul>
-            <li>Brush extensions 2-3 times daily with a loop brush, starting from the ends and working up</li>
-            <li>Never go to bed with wet hair</li>
-            <li>Use a silk or satin pillowcase to reduce friction</li>
-            <li>Tie hair in a loose braid or ponytail while sleeping</li>
-        </ul>
+        <p>During your consultation, I'll give you an exact quote based on what you need. No surprises.</p>
 
-        <h3>Washing Your Extensions</h3>
+        <h2>Questions I Get Asked All the Time</h2>
 
-        <p>Use sulfate-free, extension-safe shampoo and conditioner. Wash hair in a downward motion (never flip your head upside down) and avoid applying conditioner directly to the bonds or tape.</p>
+        <p><strong>"Will extensions damage my hair?"</strong><br>
+        Not if they're installed correctly and you follow the maintenance routine. Damage happens when extensions are too heavy for your hair, installed improperly, or neglected between appointments. I'm very careful about this—I won't install extensions that your hair can't support.</p>
 
-        <div class="image-placeholder">
-            <!-- Replace with: <img src="/images/blog/extension-care.jpg" alt="Hair extension care products and brushes"> -->
-            Image: Extension care routine (800x400px)
-        </div>
+        <p><strong>"Can I still work out / swim / live my life?"</strong><br>
+        Absolutely. I have clients who are gym regulars, swimmers, and generally very active. We just need to choose the right method and you need to follow the care instructions. Tying your hair up during workouts and rinsing after chlorine or saltwater makes a big difference.</p>
 
-        <h3>Styling Tips</h3>
+        <p><strong>"How long until I need a maintenance appointment?"</strong><br>
+        Typically 6-10 weeks depending on the method and how fast your hair grows. I'll schedule your next appointment before you leave so you're always on the books.</p>
 
-        <p>You can style extensions just like your natural hair, but keep heat settings moderate and always use a heat protectant. Avoid applying heat directly to bonds or tape attachments.</p>
-
-        <h2>What to Expect During Your Appointment</h2>
-
-        <p>Your first extension appointment typically takes 2-3 hours, depending on the method and amount of hair being applied. Here's a general timeline:</p>
-
-        <ol>
-            <li><strong>Consultation (15-30 min):</strong> Discussing your goals, choosing colors, and selecting the method</li>
-            <li><strong>Preparation (15-20 min):</strong> Sectioning and preparing your natural hair</li>
-            <li><strong>Application (1.5-2.5 hours):</strong> Installing the extensions</li>
-            <li><strong>Blending & Styling (30-45 min):</strong> Cutting and styling for a seamless look</li>
-        </ol>
-
-        <h2>Investment & Long-Term Cost</h2>
-
-        <p>Quality extensions are an investment. Initial costs vary based on the method, hair quality, and amount needed. Plan for maintenance appointments every 6-10 weeks to keep your extensions looking their best.</p>
-
-        <p>Remember: investing in quality hair and professional installation pays off in the long run with better wear, more natural appearance, and less damage to your natural hair.</p>
+        <p><strong>"What if I want to take them out?"</strong><br>
+        No problem. Extensions are not permanent. When you're ready for a break or want to switch things up, I remove them safely and your natural hair is right there waiting for you.</p>
 
         <!-- CTA Section -->
         <div class="article-cta">
-            <h3>Thinking About Extensions?</h3>
-            <p>Book a consultation to discuss which extension method is right for you, or reach out on Instagram to ask any questions!</p>
-            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://www.vagaro.com/sydhair/book-now" target="_blank" rel="noopener" class="btn">Book Your Consultation</a>
-                <a href="https://www.instagram.com/syd_hair" target="_blank" rel="noopener" class="btn btn-secondary">Ask Me on Instagram</a>
+            <h3>Questions?</h3>
+            <p>My goal is to make this process as seamless as possible so we can focus on what matters—accomplishing your hair goals. If you have questions or want personalized advice, I'm here to help.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                <a href="https://www.instagram.com/syd_hair" target="_blank" rel="noopener" class="btn" style="background: transparent; border: 2px solid var(--primary-color); color: var(--primary-color);">DM Me on Instagram</a>
+                <a href="https://www.vagaro.com/sydhair/book-now" target="_blank" rel="noopener" class="btn">Book a Consultation</a>
             </div>
         </div>
 
@@ -794,33 +635,13 @@
         </div>
     </article>
 
-    <!-- Related Posts -->
-    <section class="related-posts">
-        <div class="container">
-            <h2>Related Articles</h2>
-            <div class="related-grid">
-                <article class="related-card">
-                    <div class="related-card-image">
-                        <!-- Replace with: <img src="/images/blog/blonde-hair-care-thumb.jpg" alt="Blonde hair care tips"> -->
-                        Image: 600x360px
-                    </div>
-                    <div class="related-card-content">
-                        <h3><a href="/blog/blonde-hair-care.html">Blonde Hair Care: How to Keep Your Color Vibrant</a></h3>
-                        <span class="related-card-date">December 5, 2024</span>
-                    </div>
-                </article>
-                <!-- Add more related posts as you create them -->
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Hair by Syd</h4>
-                    <p>Premier hair salon specializing in extensions and coloring services in Omaha, NE.</p>
+                    <p>Bringing creative goals to life - specializing in hair extensions and coloring.</p>
                 </div>
 
                 <div class="footer-section">
@@ -841,9 +662,18 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Hair by Syd. All rights reserved.</p>
+                <p>&copy; Hair by Syd</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        mobileToggle.addEventListener('click', function() {
+            nav.classList.toggle('mobile-open');
+        });
+    </script>
 </body>
 </html>

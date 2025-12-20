@@ -29,12 +29,13 @@
     <link rel="canonical" href="https://hairbysyd.com/blog/blonde-hair-care.html">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -77,8 +78,9 @@
             --background-cream: rgba(250,249,244,1);
             --hover-color: rgba(196,190,177,1);
             --border-color: rgba(228,225,219,1);
-            --font-primary: 'Inter', sans-serif;
-            --font-display: 'Playfair Display', serif;
+            --font-primary: 'Nunito Sans', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+            --font-display: 'Playfair Display', 'Didot', serif;
+            --font-script: 'Dancing Script', cursive;
             --section-padding: clamp(2rem, 6vw, 4rem);
             --container-padding: clamp(1rem, 4vw, 2rem);
         }
@@ -593,6 +595,19 @@
                 display: flex;
             }
 
+            .nav.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(250,249,244,0.98);
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+                gap: 1rem;
+            }
+
             .article-meta {
                 flex-direction: column;
                 gap: 0.5rem;
@@ -891,7 +906,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Hair by Syd</h4>
-                    <p>Premier hair salon specializing in extensions and coloring services in Omaha, NE.</p>
+                    <p>Bringing creative goals to life - specializing in hair extensions and coloring.</p>
                 </div>
 
                 <div class="footer-section">
@@ -912,9 +927,18 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Hair by Syd. All rights reserved.</p>
+                <p>&copy; Hair by Syd</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        mobileToggle.addEventListener('click', function() {
+            nav.classList.toggle('mobile-open');
+        });
+    </script>
 </body>
 </html>

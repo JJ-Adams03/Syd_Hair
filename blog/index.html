@@ -21,12 +21,13 @@
     <link rel="canonical" href="https://hairbysyd.com/blog/">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         /* CSS Variables - Matching Main Site */
@@ -43,8 +44,9 @@
             --background-cream: rgba(250,249,244,1);
             --hover-color: rgba(196,190,177,1);
             --border-color: rgba(228,225,219,1);
-            --font-primary: 'Inter', sans-serif;
-            --font-display: 'Playfair Display', serif;
+            --font-primary: 'Nunito Sans', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+            --font-display: 'Playfair Display', 'Didot', serif;
+            --font-script: 'Dancing Script', cursive;
             --section-padding: clamp(3rem, 8vw, 6rem);
             --container-padding: clamp(1rem, 4vw, 2rem);
         }
@@ -342,6 +344,19 @@
                 display: flex;
             }
 
+            .nav.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(250,249,244,0.98);
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+                gap: 1rem;
+            }
+
             .blog-grid {
                 grid-template-columns: 1fr;
             }
@@ -388,7 +403,6 @@
     <section class="blog-hero">
         <div class="container">
             <h1>Hair Care Insights</h1>
-            <p>Tips, trends, and tutorials to help you achieve and maintain your dream hair</p>
         </div>
     </section>
 
@@ -400,39 +414,15 @@
                 <!-- Blog Card 1 -->
                 <article class="blog-card">
                     <div class="blog-card-image">
-                        <!-- Replace with: <img src="/images/blog/hair-extensions-guide.jpg" alt="Complete guide to hair extensions"> -->
-                        <span>Image: 800x500px</span>
+                        <img src="/images/extensions2.jpg" alt="Complete guide to hair extensions" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="blog-card-content">
                         <div class="blog-card-meta">
                             <span class="blog-card-category">Extensions</span>
-                            <span>December 10, 2024</span>
                         </div>
                         <h2><a href="/blog/hair-extensions-guide.html">The Complete Guide to Hair Extensions: Everything You Need to Know</a></h2>
                         <p class="blog-card-excerpt">Considering hair extensions? Learn about the different types, maintenance requirements, and how to choose the best option for your lifestyle and hair goals.</p>
                         <a href="/blog/hair-extensions-guide.html" class="read-more">
-                            Read More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 2 -->
-                <article class="blog-card">
-                    <div class="blog-card-image">
-                        <!-- Replace with: <img src="/images/blog/blonde-hair-care.jpg" alt="Blonde hair care tips"> -->
-                        <span>Image: 800x500px</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="blog-card-category">Hair Care</span>
-                            <span>December 5, 2024</span>
-                        </div>
-                        <h2><a href="/blog/blonde-hair-care.html">Blonde Hair Care: How to Keep Your Color Vibrant and Healthy</a></h2>
-                        <p class="blog-card-excerpt">Maintaining beautiful blonde hair requires special care. Discover the products, techniques, and salon treatments that will keep your blonde looking fresh and healthy.</p>
-                        <a href="/blog/blonde-hair-care.html" class="read-more">
                             Read More
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -451,7 +441,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Hair by Syd</h4>
-                    <p>Premier hair salon specializing in extensions and coloring services in Omaha, NE.</p>
+                    <p>Bringing creative goals to life - specializing in hair extensions and coloring.</p>
                 </div>
 
                 <div class="footer-section">
@@ -472,9 +462,18 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Hair by Syd. All rights reserved.</p>
+                <p>&copy; Hair by Syd</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        mobileToggle.addEventListener('click', function() {
+            nav.classList.toggle('mobile-open');
+        });
+    </script>
 </body>
 </html>
