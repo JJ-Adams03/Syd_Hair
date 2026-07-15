@@ -208,8 +208,12 @@ Then open: http://localhost:8080
 | File | Purpose |
 |------|---------|
 | `index.html` | Main homepage |
-| `blog/index.html` | Blog listing page |
-| `blog/hair-extensions-guide.html` | Blog post |
-| `blog/blonde-hair-care.html` | Blog post |
-| `images/` | All site images |
+| `hair-extensions/index.html` | Extensions landing page |
+| `hair-color/index.html` | Color landing page |
+| `wedding-hair/index.html` | Weddings landing page |
+| `styles.css` / `script.js` | Shared styles and scripts |
+| `sitemap.xml` / `robots.txt` | SEO (submit sitemap in Search Console) |
+| `_redirects` | Netlify 301s for old /blog/ URLs |
+| `404.html` | Not-found page (Netlify picks it up automatically) |
+| `images/` | All site images (use the .webp versions on pages) |
 | `DEPLOY.md` | This deployment guide |

@@ -1,0 +1,7 @@
+# Old blog URLs -> closest relevant page (301 permanent)
+/blog/hair-extensions-guide.html  /hair-extensions/  301
+/blog/hair-extensions-guide       /hair-extensions/  301
+/blog/blonde-hair-care.html       /hair-color/       301
+/blog/blonde-hair-care            /hair-color/       301
+/blog/*                           /                  301
+/blog                             /                  301
