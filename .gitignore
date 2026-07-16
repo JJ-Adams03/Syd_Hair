@@ -83,3 +83,5 @@ bundle-analyzer-report.html
 *.backup
 *.bak
 *.old
+# Wrangler local cache
+.wrangler/
